@@ -1,0 +1,578 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Istok+Web&family=Montserrat:wght@700&display=swap');
+
+/* 1. HEADER*/
+html,
+body {
+    font-family: 'Istok Web', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-size: 20px;
+  
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+    
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 15% 65% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "logo navhead contacthead";
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    padding-top: 4vh;
+    background-color: #001020;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: logo;
+}
+
+.logo img {
+    width: 40%;
+    height: 50%;
+}
+
+.navhead {
+    grid-area: navhead;
+}
+
+.navhead a {
+    padding: 30px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+}
+
+.contacthead {
+    grid-area: contacthead;
+    padding: 30px;
+}
+
+.buttoncontact,
+.buttondevis {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #6655fb;
+    border-radius: 10px;
+    /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
+    font-size: 1em;
+    font-family: 'Istok Web', sans-serif;
+    margin-right: 40px;
+} 
+
+.buttoncontact:hover,
+.buttondevis:hover {
+background-color: #a135fa;
+}
+
+/* 2. MAIN */
+
+.content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto; 
+    grid-template-areas: 
+    "imgfullwidth"
+    "quote"
+    "services"
+    "subscription"
+    "form";
+    background-color: lightblue;
+    height: 60%;
+}
+
+/*Section1*/
+
+.imgfullwidth {
+    grid-area: imgfullwidth;
+    /*display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 30px;
+    grid-template-areas: 
+    "textimg"
+    "buttonimg";*/
+    height: 100vh;
+    background-image: 
+    /*linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)),*/
+        url('Images/macbook_pro_laptop_purple_light-wallpaper-1920x1200.jpg');
+    background-size: cover;
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgfullwidth .textimg h1 {
+    padding-top: 90px;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0.5px 0.5px 1px #e34619, 0 0 1em #c23eaf, 0 0 0.2em #1393ca;
+}
+
+.buttonimg {
+    margin-bottom: 130px; 
+    background-color: transparent;
+    color: white;
+    border: 2px solid #6655fb;
+    border-radius: 10px;
+    /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
+    font-size: 1.2em;
+    font-family: 'Istok Web', sans-serif;
+}
+
+.buttonimg:hover {
+background-color: #a135fa;
+}
+
+/*Section2*/
+
+.quote {
+    grid-area: quote;
+    background-color: white;
+    text-align: center;
+    line-height: 1px;
+    padding: 10vh;
+    font-size: 1.5em;
+    
+}
+.quote p {
+    text-align: right;
+    padding-right: 5%;
+    line-height: 1px;
+  
+}
+
+.buttonquote {
+    float:right;
+    background-color: transparent;
+    color:#6655fb;
+    border: 0px;
+    /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
+    font-size: 0.8em;
+    font-family: 'Istok Web', sans-serif;
+    padding-right: 5%;
+    line-height: 10vh;
+
+}
+
+/*Section3*/
+
+
+.services h2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+
+}
+
+.services {
+    grid-area: services;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12vh;
+    gap: 10vh;
+    background-color: #001020;
+
+}
+
+.siteweb,
+.applicationweb, 
+.UXDesign,
+.applicationmobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6655fb;
+    height: 15vh;
+    width: 15vw;
+    border: 2px solid white;
+}
+
+/*.siteweb:hover,
+.applicationweb:hover, 
+.UXDesign:hover,
+.applicationmobile:hover {
+    transform: rotate(270deg);
+	
+}*/
+
+/*Animation carte*/
+.card {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    margin:0 auto;
+    width:240px;
+    height:320px;
+    perspective: 1000px;
+    text-align: center;
+      }
+      
+.card-inner {
+    position:relative;
+    width: 100%;
+    height:100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+      }
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+      }
+
+      .card-front1,
+      .card-front2,
+      .card-front3,
+      .card-front4,
+       .card-back {
+    position:absolute;
+    height:100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding:16px;
+    border-radius:8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      }
+
+    .card-front1  {
+      background-image:url('Images/ui-gcd2b4ebf4_1920.jpg');
+      background-size:cover;
+      background-position:center center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    .card-front2  {
+      background-image:url('Images/macbook_pro_laptop_purple_light-wallpaper-1920x1200.jpg');
+      background-size:cover;
+      background-position:center center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    .card-front3  {
+      background-image:url('Images/computer-g336ff410f_1920.jpg');
+      background-size:cover;
+      background-position:center center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+
+    .card-front4  {
+      background-image:url('Images/phone-g6ea0a6e0e_1920.jpg');
+      background-size:cover;
+      background-position:center center;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      overflow: hidden;
+    }
+    
+    .card-front1:before,
+    .card-front2:before, 
+    .card-front3:before,
+    .card-front4:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      background: linear-gradient(0deg, black, transparent);
+    }
+    
+    .card-front1,
+    .card-front2,
+    .card-front3,
+    .card-front4,
+    .card-content {
+      z-index: 1;
+      color:white;
+    }
+    
+    .card-front1,
+    .card-front2,
+    .card-front3,
+    .card-front4,
+    .card-content p {
+      color:#ececec;
+    }
+    .card-back {
+      transform: rotateY(180deg);
+      background:white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .card-back .card-image {
+      width:120px;
+      height:120px;
+      margin:0 auto;
+      border:solid 1px #cecece;
+      border-radius:100%;
+      background-image:url('images/back.jpg');
+      background-size:cover;
+      background-position:center center;
+    }
+    
+    .card-back p {
+      margin-top:12px;
+    }
+    
+    .card-back .card-icons {
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card-back .card-icons a {
+      font-size:18px;
+      color:white;
+      background:black;
+      width:42px;
+      height:42px;
+      border-radius:100%;
+      margin:8px;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition:opacity .2s;
+    }
+    
+    .card-back .card-icons a:hover {
+      cursor:pointer;
+      opacity:0.7;
+    }
+    .card-front {
+      transition: opacity .6s;
+    }
+    
+    .card:hover .card-front {
+        opacity:0;
+      }
+/*Fin Animation carte*/
+
+/*Section 4*/
+
+.subscription {
+    grid-area: subscription;
+    background-color:#6655fb;
+    padding-bottom: 5vh;
+}
+
+.subscription h2 {
+  text-align: center;
+  color: white;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 2em;
+}
+
+.stepper-wrapper {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stepper-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.stepper-item::before {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: -50%;
+  z-index: 2;
+}
+
+.stepper-item::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid #ccc;
+  width: 100%;
+  top: 20px;
+  left: 50%;
+  z-index: 2;
+}
+
+.stepper-item .step-counter {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-bottom: 6px;
+}
+
+.step-counter:hover {
+  background-color: blueviolet; 
+}
+
+.stepper-item:first-child::before {
+  content: none;
+}
+.stepper-item:last-child::after {
+  content: none;
+}
+
+/*Fin de section 4*/
+
+.form {
+    grid-area: form;
+    align-items: center;
+    font-family: 'Istok Web', sans-serif;
+    background-color: #001020;
+}
+
+.form h2{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+}
+.form-horizontal {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding-right: 20%;
+      padding-left: 20%;
+      font-family: 'Istok Web', sans-serif;
+      font-weight: 400;
+        
+    }
+    input, textarea, select {
+      margin-bottom: 1rem;
+      border-radius: 7px;
+      padding: 0.3rem;
+      border: solid 1px;
+    }
+    textarea {
+      font-family: 'Istok Web', sans-serif;
+      max-width:100%;
+      letter-spacing: 1px;
+    }
+    input:focus, textarea:focus, select:focus, button:focus {
+      outline: none;
+      -webkit-box-shadow: 0px 0px 11px -7px #bac4bf;
+      -moz-box-shadow: 0px 0px 11px -7px #bac4bf;
+      box-shadow: 0px 0px 11px -7px #bac4bf;
+      border: solid 1px #d5e1db;
+    }
+    label {
+      margin-bottom: 0.5rem;
+      color:white;
+    }
+    .section-header {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 50px;
+      letter-spacing: 6px;
+      margin-bottom: 25px;
+      color: white;
+      font-style: 'Istok Web', sans-serif;
+    }
+    
+
+    .send-button {
+      margin-top: 15px;
+      height: 34px;
+      width: 400px;
+      background-color: #6655fbcb;
+      border: none;
+      border-radius: 7px;
+      font: 'Istok Web', sans-serif;
+      letter-spacing: 2px;
+    }
+    .send-button:hover {
+      cursor: pointer;
+      color: white;
+      background-color: #6655fb;
+    }
+    .advert-wrapper {
+      color: grey;
+      font-size: 0.8rem;
+      margin-top: 2rem;
+}
+
+
+
+.footer {
+    background-color:#6655fb;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+}
+
+.navfooter a {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  text-align: center;
+}
+
+.footer p {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  font-size: 0.5em;
+  text-align: center;
+}
