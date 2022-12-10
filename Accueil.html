@@ -6,6 +6,7 @@
         <meta name="description" content="Vos sites et applications">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="style.css" rel="stylesheet">
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">   
     </head>
 
     <body class="body">
@@ -16,39 +17,31 @@
             <nav class="navhead">
                     <a href="#">Services</a>
                     <a href="#">Portfolio</a>
-                    <a href="#">Nous</a>
+                    <a href="#">Témoignages</a>
             </nav>
             <div class="contacthead">
                 <button type="button" class="buttoncontact">Contact</button>
-                <button type="button" class="buttondevis">Devis</button>  
+                <!--<button type="button" class="buttondevis">Devis</button>--> 
             </div>
         </header>
 
         <main class="content">
         
             <section class="imgfullwidth">
-                <div class="textimg"><h1>Vos sites et applications
-                créés avec reflexion<br>
-                designés avec passion</h1>
+                <div class="textimg"><h1><span class="h1-subtitle">Votre site et vos applications créés 
+                  avec passion</span><br>
+                 Développeur Full Stack Freelance</h1>
                 </div>
                 <div>
-                <button type="button" class="buttonimg">En savoir plus</button>
+                <button type="button" class="buttonimg">Demander un devis</button>
                 </div>
-            </section>
-
-            <section class="quote"><h2>"La valeur d'un site web dépend de son utilisation"</h2><br>
-                <p><em>Thomas Edison X Up404</em></p>
-                <div>
-                    <button type="button" class="buttonquote">En savoir plus<br>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-arrow-down-left-square-fill" viewbox="0 0 16 16">
-                            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm8.096-10.803L6 9.293V6.525a.5.5 0 0 0-1 0V10.5a.5.5 0 0 0 .5.5h3.975a.5.5 0 0 0 0-1H6.707l4.096-4.096a.5.5 0 1 0-.707-.707z"/>
-                          </svg>
-                    </button>
-                </div> 
             </section>
             
             <section class="services">
                 <h2>Des services de qualité</h2>
+                <p>Après 5 ans de travail passionné dans le domaine du developpement informatique
+                  que cela soit pour des marques, des évènements ou des influenceurs, 
+                  je vous propose aujourd'hui les services qui suivent </p>
                 <!--<div class="siteweb">Site web</div>
                 <div class="applicationweb">Application web</div>
                 <div class="UXDesign">UX Design</div>
@@ -136,28 +129,135 @@
         
             </section>
 
-            <section class="subscription"><h2>4 étapes pour notre projet</h2>
+            <section class="portfolio_synthesis portfolio container" id="portfolio">
+              <h2>Vos projets, mes réalisations</h2>
+              <p>Parce qu'une image vaut mille mots, voici les travaux que j'ai pu réaliser avec
+                les client qui m'ont fait confiance sur leur projet.</p>
+              <div class="portfolio-content">
+                <div class="portfolio-box">
+                  <img src="Images/Portfolio site web.png" alt="" class="portfolio-img">
+                  <div class="portfolio-overlay">
+                    <h3>Web Development</h3>
+                    <a href="#">
+                      <i class="bx bx-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <img src="Images/Portfolio site web.png" alt="" class="portfolio-img">
+                  <div class="portfolio-overlay">
+                    <h3>Web Development</h3>
+                    <a href="#">
+                      <i class="bx bx-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <img src="Images/Portfolio site web.png" alt="" class="portfolio-img">
+                  <div class="portfolio-overlay">
+                    <h3>Web Development</h3>
+                    <a href="#">
+                      <i class="bx bx-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <img src="Images/Portfolio site web.png" alt="" class="portfolio-img">
+                  <div class="portfolio-overlay">
+                    <h3>Web Development</h3>
+                    <a href="#">
+                      <i class="bx bx-link-alt"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            
+            <section class="testimonials">
+             <h2>Votre besoin au coeur de mes réflexions</h2>
+             <div class="quotes page-width">
+              <div class="quotes-slide slideshow__slide--active"  data-slider-slide-index="0" aria-hidden="false" tabindex="-1">
+                  <blockquote class="quotes-slider__text text-left">
+                      <span class="quote-icon">
+                        <i class="fa-solid fa-quote-left fa-lg icon icon-quote fa-bounce"></i>
+                      </span>
+                      <div class="testimonials-content">
+                          <p>
+                            Au-delà de ses compétences techniques, qui sont indiscutables, Benjamin 
+                            a une démarche très orientée client, ce qui lui a permis de comprendre 
+                            très rapidement nos besoins et de nous proposer à chaque étape des solutions 
+                            adaptées. J'espère travailler prochainement avec...
+                          </p>
+                      </div>
+                      <cite>Annabelle Ferry</cite>
+                      <br><span class="title-author">Responsable Marketing Citwell</span>
+                  </blockquote>
+              </div>
+          
+              <div class="quotes-slide slideshow__slide--active" data-slider-slide-index="1" aria-hidden="false" tabindex="-1">
+                  <blockquote class="quotes-slider__text text-left">
+                      <span class="quote-icon">
+                        <i class="fa-solid fa-quote-left fa-lg icon icon-quote fa-bounce"></i>
+                      </span>
+          
+                      <div class="testimonials-content">
+                          <p>
+                            Toutes ces belles qualités si rares ne mettent pas en retrait toutes 
+                            ces grandes compétences technique qu'il a su parfaitement expliquer à 
+                            quelqu'un comme moi qui n'y connaît rien mais qui est exigeant car je 
+                            sais ce que je veux. Je suis très heureux de notre...
+                          </p>
+                      </div>
+                      <cite>Olivier Grammatico</cite>
+                      <br><span class="title-author">CEO Cameo Paris</span>
+                  </blockquote>
+              </div>
+          
+              <div  class="quotes-slide slideshow__slide--active"  data-slider-slide-index="2"  aria-hidden="false" tabindex="-1">
+                  <blockquote class="quotes-slider__text text-left">
+                      <span class="quote-icon">
+                        <i class="fa-solid fa-quote-left  icon icon-quote fa-bounce"></i>
+                      </span>
+                      <div class="testimonials-content">
+                          <p>J'ai travaillé avec Benjamin sur mon projet d'une boutique e-commerce. 
+                            Son expertise, son écoute et son professionnalisme ont permis de réaliser 
+                            le site que je voulais par dessus tout !
+                            Je recommande à 100% de lui confier votre projet pour...</p>
+                      </div>
+                      <cite>Thomas Deshayes</cite>
+                      <br><span class="title-author">Freelance audiovisuel</span>
+                  </blockquote>
+              </div>
+          </div>
+            </section>
+
+            <section class="subscription"><h2>Comment se déroule la prestation ?</h2>
+              <p>Voici en 4 grandes étapes, les moments clés de notre colloboration qui permettront
+                d'aboutir au résultat que vous souhaitez. Une communication totalement transparente
+                sur chacune des étapes sera fournie afin de vous permettre d'obtenir une vision claire
+                sur la livraison des livrables.
+              </p>
               <div class="stepper-wrapper">
                 <div class="stepper-item">
                   <div class="step-counter">1</div>
-                  <div class="step-name">Brief de votre projet</div>
+                  <div class="step-name">Brief</div>
                 </div>
                 <div class="stepper-item">
                   <div class="step-counter">2</div>
-                  <div class="step-name">Estimation du temps & Devis</div>
+                  <div class="step-name">Maquettage</div>
                 </div>
                 <div class="stepper-item">
                   <div class="step-counter">3</div>
-                  <div class="step-name">Lancement projet</div>
+                  <div class="step-name">Developpement</div>
                 </div>
                 <div class="stepper-item">
                   <div class="step-counter">4</div>
-                  <div class="step-name">Facturation</div>
+                  <div class="step-name">Livraison</div>
                 </div>
               </div>
 
             </section>
-
+           
             <section class="form">
                 <form class="form-horizontal" method="post" action="contact.php">
                   <h2>Prenons contact !</h2>
@@ -183,17 +283,18 @@
                   </select>
                   
                   <label for="message">Message</label>
-                  <textarea rows="10" id="message" name="message" required></textarea>
+                  <textarea rows="10" id="message" placeholder="N'hésitez pas à détailler votre demande afin de faciliter nos futurs échanges !" 
+                  name="message" required></textarea>
           
                   <button class="send-button" id="submit" type="submit">Envoyer</button>
           
-                  <div class="advert-wrapper">
+                  <!--<div class="advert-wrapper">
                     <p>Souhaitez-vous recevoir nos news ?</p>
                     <input type="radio" id="yes" name="news-question" value="yes" checked>
                     <label for="yes">Oui</label>
                     <input type="radio" id="no" name="news-question" value="no">
                     <label for="no">Non</label>
-                  </div>
+                  </div>-->
                 </form>
         </section>
         </main>
@@ -202,11 +303,11 @@
           <nav class="navfooter">
             <a href="#">Services</a>
             <a href="#">Portfolio</a>
-            <a href="#">Nous</a>
+            <a href="#">Témoignages</a>
           </nav>
           <p><em>copyright Benjamin MICHEL - 2022</em></p>
         </footer>
       <script src="script.js"></script>
+      <script src="https://kit.fontawesome.com/ae0f432df8.js" crossorigin="anonymous"></script>
     </body>
-
 </html>

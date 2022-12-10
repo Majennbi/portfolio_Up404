@@ -17,8 +17,14 @@ body {
     grid-template-areas: 
     "header"
     "content"
-    "footer";
-    
+    "footer";  
+}
+
+p {
+  color: white;
+  font-size: 1.3em;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 .header {
@@ -31,8 +37,7 @@ body {
     justify-items: center;
     align-items: center;
     padding-top: 4vh;
-    background-color: #001020;
-    
+    background-color:#172540; 
 }
 
 .logo {
@@ -69,7 +74,7 @@ body {
 .buttondevis {
     background-color: transparent;
     color: white;
-    border: 2px solid #6655fb;
+    border: 2px solid #2E6FF2;
     border-radius: 10px;
     /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
     font-size: 1em;
@@ -79,7 +84,7 @@ body {
 
 .buttoncontact:hover,
 .buttondevis:hover {
-background-color: #a135fa;
+background-color: #2E6FF2;
 }
 
 /* 2. MAIN */
@@ -87,14 +92,14 @@ background-color: #a135fa;
 .content {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto; 
+    grid-template-rows: auto auto auto auto auto auto; 
     grid-template-areas: 
     "imgfullwidth"
-    "quote"
     "services"
+    "portefolio_synthesis"
+    "testimonials"
     "subscription"
     "form";
-    background-color: lightblue;
     height: 60%;
 }
 
@@ -110,81 +115,64 @@ background-color: #a135fa;
     "buttonimg";*/
     height: 100vh;
     background-image: 
-    /*linear-gradient(
+    linear-gradient(
         rgba(0, 0, 0, 0.6), 
-        rgba(0, 0, 0, 0.6)),*/
-        url('Images/macbook_pro_laptop_purple_light-wallpaper-1920x1200.jpg');
+        rgba(0, 0, 0, 0.6)),
+        url('Images/pexels-jéshoots-234527\ \(1\).jpg');
     background-size: cover;
     color: white;
     
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+   
     align-items: center;
 }
 
 .imgfullwidth .textimg h1 {
     padding-top: 90px;
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
-    text-shadow: 0.5px 0.5px 1px #e34619, 0 0 1em #c23eaf, 0 0 0.2em #1393ca;
+    text-shadow: 0.5px 0.5px 1px #2E6FF2, 0 0 1em #172540, 0 0 0.2em #0487D9;
+}
+
+.imgfullwidth .textimg span {
+    padding-top: 90px;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: none;
 }
 
 .buttonimg {
+    margin-top: 90px;
     margin-bottom: 130px; 
     background-color: transparent;
     color: white;
-    border: 2px solid #6655fb;
+    border: 2px solid #2E6FF2;
     border-radius: 10px;
     /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: 'Istok Web', sans-serif;
+    padding: 10px;
 }
 
 .buttonimg:hover {
-background-color: #a135fa;
+background-color: #2E6FF2;
 }
 
 /*Section2*/
 
-.quote {
-    grid-area: quote;
-    background-color: white;
-    text-align: center;
-    line-height: 1px;
-    padding: 10vh;
-    font-size: 1.5em;
-    
-}
-.quote p {
-    text-align: right;
-    padding-right: 5%;
-    line-height: 1px;
-  
-}
-
-.buttonquote {
-    float:right;
-    background-color: transparent;
-    color:#6655fb;
-    border: 0px;
-    /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
-    font-size: 0.8em;
-    font-family: 'Istok Web', sans-serif;
-    padding-right: 5%;
-    line-height: 10vh;
-
-}
-
-/*Section3*/
-
-
-.services h2 {
+.services h2, .portfolio_synthesis h2 {
     width: 100%;
     text-align: center;
     color: white;
     font-size: 2em;
+}
 
+.testimonials h2 {
+  width: 100%;
+  text-align: center;
+  color: #172540;
+  font-size: 2em;
 }
 
 .services {
@@ -192,9 +180,7 @@ background-color: #a135fa;
     display: flex;
     flex-wrap: wrap;
     padding: 12vh;
-    gap: 10vh;
     background-color: #001020;
-
 }
 
 .siteweb,
@@ -258,7 +244,7 @@ background-color: #a135fa;
       }
 
     .card-front1  {
-      background-image:url('Images/ui-gcd2b4ebf4_1920.jpg');
+      background-color: #172540;
       background-size:cover;
       background-position:center center;
       display:flex;
@@ -280,7 +266,7 @@ background-color: #a135fa;
     }
 
     .card-front3  {
-      background-image:url('Images/computer-g336ff410f_1920.jpg');
+      background-color: #172540;
       background-size:cover;
       background-position:center center;
       display:flex;
@@ -350,7 +336,10 @@ background-color: #a135fa;
     }
     
     .card-back p {
-      margin-top:12px;
+      margin-top:22px;
+      font-size: 1em;
+      text-align: center;
+      color: black;
     }
     
     .card-back .card-icons {
@@ -387,12 +376,12 @@ background-color: #a135fa;
       }
 /*Fin Animation carte*/
 
-/*Section 4*/
+/*Section 3*/
 
 .subscription {
     grid-area: subscription;
-    background-color:#6655fb;
-    padding-bottom: 5vh;
+    background-color: #172540;
+    padding: 10vh;
 }
 
 .subscription h2 {
@@ -419,6 +408,11 @@ background-color: #a135fa;
   @media (max-width: 768px) {
     font-size: 12px;
   }
+}
+
+.step-name {
+  font-size: 1.5em;
+  color: white;
 }
 
 .stepper-item::before {
@@ -465,7 +459,143 @@ background-color: #a135fa;
   content: none;
 }
 
-/*Fin de section 4*/
+/*Section 4*/
+
+.portfolio_synthesis {
+  grid-area: portefolio_synthesis;
+  background-color: #172540;
+  padding: 12vh;
+}
+
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 50px 50px 50px 50px;
+  gap: 2rem;
+}
+
+.portfolio-box {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: hsl(234,45%,16%,0.7);
+}
+
+
+.portfolio-overlay h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.portfolio-overlay .bx {
+  font-size: 24px;
+  padding: 10px;
+  background: #6655fb;
+  color: #c23eaf;
+  border-radius: 4px;
+}
+
+.portfolio-overlay .bx:hover {
+  background-color: #1393ca;
+  transition: 0.3s all linear;
+}
+
+.portfolio-box:hover .portfolio-overlay {
+  top: 0;
+  transition: 0.3s all ease ;
+}
+
+/*Section 5*/
+
+.testimonials {
+  grid-area: testimonials;
+  background-color: white;
+}
+
+.page-width {
+  max-width: 1350px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text-left {
+  text-align: left;
+}
+.quotes {
+  box-sizing: border-box;
+  display: flex;
+  padding: 5rem 2rem;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.quotes-slide {
+  width: 33%;
+  padding: 3rem;
+  background-color: #172540;
+  opacity: .4;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 1px #d5d5d5;
+  line-height: 1.75;
+  font-family: 'Roboto', sans-serif;
+  transition: all .5s ease;
+  outline: none;
+  border-radius:8px;
+}
+
+.quotes-slide--active {
+    transform: scale(1.2);
+    z-index: 10;
+    opacity: 1;
+    border: none;
+    box-shadow: 1px 0px 10px 5px #eaeaea;
+    color: #222222;
+}
+
+.testimonials-content {
+  font-size: 0.8rem ;
+}
+blockquote {
+  margin: 0;
+}
+cite{
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.7rem;
+}
+
+.title-author {
+  font-size: 0.6rem;
+}
+.title-author::before {
+    content: '\2014 \0020';
+}
+.fa-solid {
+  color: #1a73e8;
+}
+
+/*Section 6*/
 
 .form {
     grid-area: form;
@@ -484,12 +614,11 @@ background-color: #a135fa;
       flex-direction: column;
       padding: 2rem;
       border-radius: 20px;
-      margin-bottom: 2rem;
-      margin-top: 2rem;
       padding-right: 20%;
       padding-left: 20%;
       font-family: 'Istok Web', sans-serif;
       font-weight: 400;
+      
         
     }
     input, textarea, select {
@@ -497,11 +626,13 @@ background-color: #a135fa;
       border-radius: 7px;
       padding: 0.3rem;
       border: solid 1px;
+      font-size: 1em;
     }
     textarea {
       font-family: 'Istok Web', sans-serif;
       max-width:100%;
       letter-spacing: 1px;
+      font-size: 1em;
     }
     input:focus, textarea:focus, select:focus, button:focus {
       outline: none;
@@ -513,6 +644,7 @@ background-color: #a135fa;
     label {
       margin-bottom: 0.5rem;
       color:white;
+      font-size: 1.2em;
     }
     .section-header {
       text-align: center;
@@ -523,22 +655,23 @@ background-color: #a135fa;
       color: white;
       font-style: 'Istok Web', sans-serif;
     }
-    
 
     .send-button {
       margin-top: 15px;
       height: 34px;
       width: 400px;
-      background-color: #6655fbcb;
+      background-color: #172540;
+      color: white;
       border: none;
       border-radius: 7px;
       font: 'Istok Web', sans-serif;
       letter-spacing: 2px;
+      font-size: 1em;
     }
     .send-button:hover {
       cursor: pointer;
-      color: white;
-      background-color: #6655fb;
+  
+      background-color: #2E6FF2;
     }
     .advert-wrapper {
       color: grey;
@@ -547,9 +680,8 @@ background-color: #a135fa;
 }
 
 
-
 .footer {
-    background-color:#6655fb;
+    background-color:#172540;
     grid-area: footer;
     display: grid;
     grid-template-columns: auto;
