@@ -1,10 +1,12 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Istok+Web&family=Montserrat:wght@700&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Istok+Web&family=Montserrat:wght@700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 1. HEADER*/
 html,
 body {
-    font-family: 'Istok Web', sans-serif;
+    /*font-family: 'Istok Web', sans-serif;*/
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -41,7 +43,6 @@ a {
     height: auto;
     justify-items: center;
     align-items: center;
-    padding-top: 4vh;
     background-color:#172540; 
 }
 
@@ -53,8 +54,9 @@ a {
 }
 
 .logo img {
-    width: 40%;
-    height: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 2vh 0 2vh 0;
 }
 
 .navhead {
@@ -66,7 +68,7 @@ a {
     font-size: 1rem;
     color: white;
     text-decoration: none;
-    font-size: 1em;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -85,6 +87,7 @@ a {
     font-size: 1em;
     font-family: 'Istok Web', sans-serif;
     margin-right: 40px;
+    padding: 10px;
 } 
 
 .buttoncontact:hover,
@@ -135,9 +138,14 @@ background-color: #2E6FF2;
 
 .imgfullwidth .textimg h1 {
     padding-top: 90px;
-    font-size: 3em;
+    font-size: 3.3em;
     text-align: center;
-    text-shadow: 0.5px 0.5px 1px #2E6FF2, 0 0 1em #172540, 0 0 0.2em #0487D9;
+    line-height: 90px;
+    text-shadow: 0.5px 0.5px 1px #2E6FF2, 0 0 1em #172540, 0 0 0.2em #0487D9;  
+}
+
+.imgfullwidth .textimg h1:hover {
+  text-shadow: none;
 }
 
 .imgfullwidth .textimg span {
@@ -383,89 +391,6 @@ background-color: #2E6FF2;
 
 /*Section 3*/
 
-.subscription {
-    grid-area: subscription;
-    background-color: #172540;
-    padding: 10vh;
-}
-
-.subscription h2 {
-  text-align: center;
-  color: white;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-  font-size: 2em;
-}
-
-.stepper-wrapper {
-  margin-top: auto;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-}
-.stepper-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
-}
-
-.step-name {
-  font-size: 1.5em;
-  color: white;
-}
-
-.stepper-item::before {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #ccc;
-  width: 100%;
-  top: 20px;
-  left: -50%;
-  z-index: 2;
-}
-
-.stepper-item::after {
-  position: absolute;
-  content: "";
-  border-bottom: 2px solid #ccc;
-  width: 100%;
-  top: 20px;
-  left: 50%;
-  z-index: 2;
-}
-
-.stepper-item .step-counter {
-  position: relative;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #ccc;
-  margin-bottom: 6px;
-}
-
-.step-counter:hover {
-  background-color: blueviolet; 
-}
-
-.stepper-item:first-child::before {
-  content: none;
-}
-.stepper-item:last-child::after {
-  content: none;
-}
-
-/*Section 4*/
-
 .portfolio_synthesis {
   grid-area: portefolio_synthesis;
   background-color: #172540;
@@ -490,7 +415,7 @@ background-color: #2E6FF2;
 .portfolio-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:cover;
   object-position: center;
 }
 
@@ -532,7 +457,7 @@ background-color: #2E6FF2;
   transition: 0.3s all ease ;
 }
 
-/*Section 5*/
+/*Section 4*/
 
 .testimonials {
   grid-area: testimonials;
@@ -575,7 +500,7 @@ background-color: #2E6FF2;
     opacity: 1;
     border: none;
     box-shadow: 1px 0px 10px 5px #eaeaea;
-    color: #222222;
+    color: white;
 }
 
 .testimonials-content {
@@ -592,6 +517,7 @@ cite{
 
 .title-author {
   font-size: 0.6rem;
+  color: #1a73e8;
 }
 .title-author::before {
     content: '\2014 \0020';
@@ -599,6 +525,90 @@ cite{
 .fa-solid {
   color: #1a73e8;
 }
+
+/*Section 5*/
+
+.subscription {
+  grid-area: subscription;
+  background-color: #172540;
+  padding: 10vh;
+}
+
+.subscription h2 {
+text-align: center;
+color: white;
+padding-top: 5vh;
+padding-bottom: 5vh;
+font-size: 2em;
+}
+
+.stepper-wrapper {
+margin-top: auto;
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+}
+.stepper-item {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+flex: 1;
+
+@media (max-width: 768px) {
+  font-size: 12px;
+}
+}
+
+.step-name {
+font-size: 1.5em;
+color: white;
+}
+
+.stepper-item::before {
+position: absolute;
+content: "";
+border-bottom: 2px solid #ccc;
+width: 100%;
+top: 20px;
+left: -50%;
+z-index: 2;
+}
+
+.stepper-item::after {
+position: absolute;
+content: "";
+border-bottom: 2px solid #ccc;
+width: 100%;
+top: 20px;
+left: 50%;
+z-index: 2;
+}
+
+.stepper-item .step-counter {
+position: relative;
+z-index: 5;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: #ccc;
+margin-bottom: 6px;
+}
+
+.step-counter:hover {
+background-color: blueviolet; 
+}
+
+.stepper-item:first-child::before {
+content: none;
+}
+.stepper-item:last-child::after {
+content: none;
+}
+
 
 /*Section 6*/
 
