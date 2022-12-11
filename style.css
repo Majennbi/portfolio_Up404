@@ -27,6 +27,11 @@ p {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .header {
     display: grid;
     grid-template-columns: 15% 65% 20%;
