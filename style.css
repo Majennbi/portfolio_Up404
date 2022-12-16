@@ -153,7 +153,7 @@ background-color: #2E6FF2;
     text-shadow: none;
 }
 
-.buttonimg {
+.buttonimg, .maltbutton {
     margin-top: 90px;
     margin-bottom: 130px; 
     background-color: transparent;
@@ -166,7 +166,21 @@ background-color: #2E6FF2;
     padding: 10px;
 }
 
-.buttonimg:hover {
+.maltbutton {
+  background-color: #172540;
+  border: 2px solid #172540;
+  font-size: 1.2rem;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  
+}
+
+.maltbutton_container {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonimg:hover, .maltbutton:hover {
 background-color: #2E6FF2;
 }
 
@@ -266,7 +280,7 @@ background-color: #2E6FF2;
     }
 
     .card-front2  {
-      background-image:url('Images/macbook_pro_laptop_purple_light-wallpaper-1920x1200.jpg');
+      background-color: #172540;
       background-size:cover;
       background-position:center center;
       display:flex;
@@ -288,7 +302,7 @@ background-color: #2E6FF2;
     }
 
     .card-front4  {
-      background-image:url('Images/phone-g6ea0a6e0e_1920.jpg');
+      background-color: #172540;
       background-size:cover;
       background-position:center center;
       display:flex;
@@ -428,6 +442,7 @@ background-color: #2E6FF2;
   align-items: center;
   justify-content: center;
   background: hsl(234,45%,16%,0.7);
+  color: white;
 }
 
 
@@ -440,8 +455,8 @@ background-color: #2E6FF2;
 .portfolio-overlay .bx {
   font-size: 24px;
   padding: 10px;
-  background: #6655fb;
-  color: #c23eaf;
+  background: #172540;
+  color: white;
   border-radius: 4px;
 }
 
