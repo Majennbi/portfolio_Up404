@@ -153,7 +153,7 @@ background-color: #2E6FF2;
     text-shadow: none;
 }
 
-.buttonimg, .maltbutton {
+.buttonimg x{
     margin-top: 90px;
     margin-bottom: 130px; 
     background-color: transparent;
@@ -170,8 +170,13 @@ background-color: #2E6FF2;
   background-color: #172540;
   border: 2px solid #172540;
   font-size: 1.2rem;
-  margin-top: 50px;
   margin-bottom: 100px;
+  color: white;
+  border: 2px solid #2E6FF2;
+  border-radius: 10px;
+  /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
+  font-family: 'Istok Web', sans-serif;
+  padding: 10px;
   
 }
 
@@ -488,9 +493,8 @@ background-color: #2E6FF2;
 .quotes {
   box-sizing: border-box;
   display: flex;
-  padding: 5rem 2rem;
+  padding: 7rem 2rem;
   align-items: center;
-  min-height: 100vh;
 }
 
 .quotes-slide {
