@@ -153,7 +153,7 @@ background-color: #2E6FF2;
     text-shadow: none;
 }
 
-.buttonimg x{
+.buttonimg {
     margin-top: 90px;
     margin-bottom: 130px; 
     background-color: transparent;
@@ -177,6 +177,7 @@ background-color: #2E6FF2;
   /*box-shadow: 0.5px 0.5px 1px #a135fa, 0 0 1em#6754fb, 0 0 0.2em #363899;*/
   font-family: 'Istok Web', sans-serif;
   padding: 10px;
+  max-width: 300px;
   
 }
 
@@ -631,9 +632,25 @@ content: none;
 
 .form {
     grid-area: form;
+    padding-top: 100px;
+    padding-bottom: 50px;
     align-items: center;
     font-family: 'Istok Web', sans-serif;
     background-color: #001020;
+}
+
+.contact_data {
+  display: flex;
+  align-items: center;
+}
+
+.contact_email, .contact_malt {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: space-around;
+  align-items: center;
+
 }
 
 .form h2{
@@ -641,7 +658,8 @@ content: none;
   color: white;
   font-size: 2em;
 }
-.form-horizontal {
+
+/*.form-horizontal {
       display: flex;
       flex-direction: column;
       padding: 2rem;
@@ -709,7 +727,7 @@ content: none;
       color: grey;
       font-size: 0.8rem;
       margin-top: 2rem;
-}
+}*/
 
 
 .footer {
