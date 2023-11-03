@@ -5,3 +5,55 @@
 .gapC3 {
     gap: 3rem !important;
 }
+
+.pb-48 {
+    padding-bottom: 8rem !important;
+}
+
+.mc {
+    margin-top: 5rem !important;
+}
+
+.violet {
+    background-color:#9333EA;
+}
+
+.bg-dark {
+    background-color: rgb(15, 23, 42) !important;
+}
+
+/*---------NAV--------*/
+
+.client, .clientBan {
+    background-color: rgb(15, 23, 42);
+}
+
+
+/*---------BADGES TECHNO---------*/
+.bg-yellow-js {
+    background-color: #f3e31b !important;
+}
+
+.bg-blue-css {
+    background-color: #1574b4 !important;
+}
+
+.bg-red-html {
+    background-color: #e85428 !important;
+}
+
+.bg-blue-php {
+    background-color: #7a7ab2 !important;
+}
+
+.bg-blue-wp {
+    background-color: #2596be !important;
+}
+
+.mobile {
+    scale: 0.9;
+}
+
+.desk {
+    scale: 1;
+}
