@@ -55,7 +55,7 @@
 }
 
 .desk {
-    scale: 1;
+    scale: 1.1;
 }
 
 #monFormulaire {
@@ -83,4 +83,15 @@ nav {
 
 .text-warning:hover {
     color:#9333EA;
+}
+
+.bg-cust {
+    background-color: black !important;
+    border-color: black !important;
+}
+
+.svgCust {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
