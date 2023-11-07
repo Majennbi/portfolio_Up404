@@ -57,3 +57,30 @@
 .desk {
     scale: 1;
 }
+
+#monFormulaire {
+    display: none;
+}
+
+footer {
+    padding-top: 0 !important;
+}
+
+.text-secondary {
+    color: #9333EA !important;
+}
+
+nav {
+    position: fixed !important;
+    z-index: 999 !important;
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.text-warning:hover {
+    color:#9333EA;
+}
