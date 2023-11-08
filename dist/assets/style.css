@@ -115,3 +115,9 @@ nav {
         padding-top: 1rem;
     }
 }
+
+a:focus, a:active {
+    border: none !important;
+    background:none !important;
+    outline: none !important;
+}
