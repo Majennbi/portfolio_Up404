@@ -99,3 +99,19 @@ nav {
     justify-content: center !important;
     align-items: center !important;
 }
+
+@media screen and (max-width: 1024px) {
+    .deskOnly {
+    display: none;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    .pt-52 {
+    padding-top: 5rem;
+}
+
+    .pt-32 {
+        padding-top: 1rem;
+    }
+}
